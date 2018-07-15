@@ -141,7 +141,7 @@ class xrangeiterator(Iterator):
         """
         return self
 
-    def next(self):
+    def __next__(self):
         """Return the next element in the sequence represented
         by the xrange we are iterating, or raise StopIteration
         if we have passed the end of the sequence."""
